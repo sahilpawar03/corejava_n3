@@ -36,7 +36,6 @@ public class DatatypeDemo {
 		System.out.println("The value of d is:" +d);
 		System.out.println("The value of e is:" +e);
 		System.out.println("The value of f is:" +f);
-		System.out.println("The value of long data type is:"+b1);
 		System.out.println("The value of char data type is:"+z);
 		
 		
