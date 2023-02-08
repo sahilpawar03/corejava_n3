@@ -1,39 +1,38 @@
 package org.tnsif.MultilevelInheritance;
 
 public class Iphone extends Android {
-		
 	private String slottype;
-	private void slot() 
+	public void slot()
 	{
-		System.out.println("Slot type is "+ slottype);
+		System.out.println("Slot type is : "+slottype);
 	}
+	public Iphone() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	/*public Iphone(String slottype) {
+		super();
+		this.slottype = slottype;
+	}*/
+	
 	public String getSlottype() {
 		return slottype;
+	}
+	public Iphone(String version, String slottype) {
+		super(version);
+		this.slottype = slottype;
 	}
 	public void setSlottype(String slottype) {
 		this.slottype = slottype;
 	}
-	
-	
-	//parameterized constructor
-	public IPhone(int modelno,String slottype, String version) {
-		super(modelno, version);
-		this.slottype = slottype;
-	}
-	//default constructor
-	public IPhone() {
-		super();
-		
-	}
 	@Override
 	public String toString() {
-		return "IPhone [slottype=" + slottype + ", getVersion()=" + getVersion() + ", getModelno()=" + getModelno()
-				+ "]";
+		return "Iphone [slottype=" + slottype + ", getSlottype()=" + getSlottype() + ", getVersion()=" + getVersion()
+				+ ", getModelno()=" + getModelno() + "]";
 	}
 	
 	
 	
-	
-	}
+}
 	
 

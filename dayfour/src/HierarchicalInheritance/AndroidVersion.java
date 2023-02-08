@@ -1,10 +1,10 @@
 package HierarchicalInheritance;
 
 public class AndroidVersion {
+	//data members
+	private String type;
 
-private String type;
-
-	
+	//getter setter
 	public String getType() {
 		return type;
 	}
@@ -13,21 +13,19 @@ private String type;
 		this.type = type;
 	}
 
+	//constructors
+	public AndroidVersion() {
+		System.out.println("Parent class-Android version");
+	}
+
 	public AndroidVersion(String type) {
 		super();
 		this.type = type;
 	}
-	
-	
-	
-	public AndroidVersion() {
-		//super();
-		// TODO Auto-generated constructor stub
-	}
 
 	@Override
 	public String toString() {
-		return "AndroidVersion [type=" + type + ", getType()=" + getType() + "]";
+		return "AndroidVersion [type=" + type + "]";
 	}
 	
 }

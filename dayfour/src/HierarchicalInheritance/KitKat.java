@@ -1,6 +1,6 @@
 package HierarchicalInheritance;
 
-public class Tiramisu extends AndroidVersion{
+public class KitKat extends AndroidVersion {
 	//data member
 	private int version;
 
@@ -14,22 +14,19 @@ public class Tiramisu extends AndroidVersion{
 	}
 
 	//constructors
-	public Tiramisu() {
+	public KitKat() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Tiramisu(int version) {
+	public KitKat(int version) {
 		super();
 		this.version = version;
 	}
 
 	@Override
 	public String toString() {
-		return "Tiramisu [version=" + version + ", toString()=" + super.toString() + "]";
+		return "KitKat [version=" + version + "]";
 	}
-
-	
-	
 	
 }
