@@ -1,11 +1,11 @@
 package org.tnsif.InstanceOfDemo;
 
-public class Child {
+//to demonstrate an exmaple on instaceof operator
 
-private int age;
+//child class
+public class Child extends Person{
+	private int age;
 
-	
-	//Getters and Setters
 	public int getAge() {
 		return age;
 	}
@@ -14,12 +14,15 @@ private int age;
 		this.age = age;
 	}
 
+	
+	//defualt constructor
 	public Child() {
 		super();
-		System.out.println("Child Class");
+		// TODO Auto-generated constructor stub
 	}
-
-	public Child(String name, String address, int age) {
+	
+	//parameterize constructor
+	public Child(String name, String address,int age) {
 		super();
 		this.age = age;
 	}
@@ -28,6 +31,8 @@ private int age;
 	public String toString() {
 		return "Child [age=" + age + ", getName()=" + getName() + ", getAddress()=" + getAddress() + "]";
 	}
+
+	
 	
 	
 }
