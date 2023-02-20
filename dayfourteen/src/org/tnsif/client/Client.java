@@ -12,7 +12,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		int choice;
-		EmployeeService service=new EmployeeServiceImpl();
+		EmployeeServiceImpl service=new EmployeeServiceImpl();
 		Scanner sc=new Scanner(System.in);
 		do
 		{

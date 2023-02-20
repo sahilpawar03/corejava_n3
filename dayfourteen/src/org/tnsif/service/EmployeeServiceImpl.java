@@ -11,7 +11,7 @@ import org.tnsif.repository.EmployeeRepoImpl;
 
 
 public class EmployeeServiceImpl {
-	@Override
+	
 	//insertion/creation of a row into a table
 	public boolean addEmployee(Employee employee) {
 		String query="INSERT INTO EMPLOYEE VALUES(?,?,?,?)";
@@ -24,7 +24,7 @@ public class EmployeeServiceImpl {
 		return false;
 	}
 
-	@Override
+	
 	//update
 	public Employee updateEmployee(Employee employee) {
 		String query="UPDATE EMPLOYEE SET password=? WHERE (userid=?)";
@@ -39,7 +39,7 @@ public class EmployeeServiceImpl {
 	
 	}
 
-	@Override
+	
 	//delete
 	public boolean deleteEmployee(int userid) {
 		EmployeeRepo repo=new EmployeeRepoImpl();
@@ -52,7 +52,7 @@ public class EmployeeServiceImpl {
 		return false;
 	}
 
-	@Override
+	
 	//retrive with specific record
 	public Employee getEmployee(int userid) {
 		Employee employee=new Employee();
@@ -76,7 +76,7 @@ public class EmployeeServiceImpl {
 		return employee;
 	}
 
-	@Override
+	
 	//retrive all the records
 	public List<Employee> getAll() {
 		List<Employee>emp=new ArrayList<Employee>();
