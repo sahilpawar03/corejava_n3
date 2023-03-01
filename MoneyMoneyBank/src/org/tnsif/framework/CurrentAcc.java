@@ -7,7 +7,7 @@ public abstract class CurrentAcc extends BankAcc{
 	public CurrentAcc(int accNo, String accNm, float accBal,float creditLimit) {
 		super(accNo, accNm, accBal);
 		this.creditLimit=creditLimit;
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@Override

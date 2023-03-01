@@ -10,15 +10,31 @@ import org.tnsif.framework.SavingAcc;
 public class Client {
 
 	public static void main(String[] args) {
-		BankFactory b=new MMBankFactory();
-		SavingAcc s=new MMSavingAcc(1234,"Sahil Pawar",50000f,true);
-		CurrentAcc c=new MMCurrentAcc(1234,"Sahil Pawar",50000f,500f);
-		System.out.println("Saving account: ");
-		System.out.println(s);
+		BankFactory f = new MMBankFactory();
+		MMSavingAcc s = new MMSavingAcc(123, "sam", 20000.0f, true);
+		MMCurrentAcc c = new MMCurrentAcc(234, "sam", 20000.0f, 40000.0f);
 		
-		System.out.println("\nCurrent account: ");
+		System.out.println("Savings Account:");
+		System.out.println(s);
+		s.withdraw(4500); 		//withdraws 4500 from accBalance
+		
+		System.out.println();
+		
+		System.out.println("Current Account:");
 		System.out.println(c);
-		c.withdraw(c.getAccBal());
+		s.withdraw(5000);		//withdraws 5000 from accBalance
+		
+		
+		
+		 
+		f.getNewSavingAcc(456, "sam", 45000.0f, true);
+		f.getNewCurrentAcc(552, "sam", 50000.0f, 80000.0f);
+		
+		
+		
+		 
+		
+		
 	}
 
 }
